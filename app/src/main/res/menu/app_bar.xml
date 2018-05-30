@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/infoItem"
+        android:title="User Information" />
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/logOutItem"
+        android:title="Log out" />
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_vol_type_speaker_dark"
+        android:title="track"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="Cast"
+        app:showAsAction="always"
+        tools:icon="@drawable/mr_button_connected_dark" />
+</menu>
