@@ -125,9 +125,12 @@ public class LoginFragment extends DialogFragment {
 
     public void setDialogLayout(){
         //set dialog at bottom
-        WindowManager.LayoutParams  params = getDialog().getWindow().getAttributes();
-        params.gravity = Gravity.BOTTOM|Gravity.CENTER;
-        getDialog().getWindow().setAttributes( params);
+        WindowManager.LayoutParams params = getDialog().getWindow().getAttributes();
+        params.gravity = Gravity.BOTTOM | Gravity.CENTER;
+        int width = ViewGroup.LayoutParams.MATCH_PARENT;
+        int height = ViewGroup.LayoutParams.WRAP_CONTENT;
+        getDialog().getWindow().setAttributes(params);
+        getDialog().getWindow().setLayout(width,height);
         //set animation
         getDialog().getWindow().getAttributes().windowAnimations = R.style.dialogTheme;
     }
